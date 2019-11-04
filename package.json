@@ -1,0 +1,12 @@
+{
+  "scripts": {
+    "cp:js": "node ./index.js script",
+    "cp:css": "node ./index.js style",
+    "cp": "node ./index.js",
+    "start": "node ./index.js"
+  },
+  "dependencies": {
+    "clipboardy": "^2.1.0",
+    "node-sass": "^4.13.0"
+  }
+}

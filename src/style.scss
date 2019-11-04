@@ -1,0 +1,58 @@
+@import "../config";
+
+#awsgnav #regionMenuContent .region.available-region {
+  border-left: 3px solid transparent;
+  display: none;
+  border-radius: 0;
+}
+#awsgnav #nav-phd .nav-elt-label {
+  filter: drop-shadow(0 1px 0 rgba(0, 0, 0, 0.8));
+}
+#awsgnav #nav-menubar {
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.8);
+}
+
+@each $region, $data in $regions {
+  #awsgnav
+    #regionMenuContent
+    .region.available-region[data-region-id="#{$region}"] {
+    border-left-color: map-get($data, "color");
+    display: block;
+    &:before {
+      content: map-get($data, "flag");
+      display: inline-block;
+      padding-right: 8px;
+    }
+  }
+  .#{$region} {
+    #awsgnav #regionMenuContent .region.current-region {
+      border-left-color: map-get($data, "color");
+      &:before {
+        content: map-get($data, "flag");
+        display: inline-block;
+        padding-right: 8px;
+        font-weight: normal;
+      }
+    }
+    #regionMenuContent .regions,
+    #awsgnav #nav-menubar,
+    #h #awsgnav #nav-menubar,
+    #awsgnav #nav-menubar,
+    #awsgnav #nav-menubar .nav-menu,
+    #nav-menu-right {
+      background-color: map-get($data, "color");
+    }
+    #awsgnav #nav-menubar #nav-regionMenu .nav-elt-label {
+      &:before {
+        content: map-get($data, "flag");
+        display: inline-block;
+        padding-right: 8px;
+      }
+      &:after {
+        content: " (#{$region})";
+        display: inline-block;
+        padding-left: 8px;
+      }
+    }
+  }
+}
