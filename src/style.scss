@@ -4,6 +4,11 @@
   border-left: 3px solid transparent;
   display: none;
   border-radius: 0;
+  &:before {
+    content: "";
+    display: inline-block;
+    padding-right: 8px;
+  }
 }
 #awsgnav #nav-phd .nav-elt-label,
 #awsgnav #nav-shortcutBar a,
@@ -22,8 +27,6 @@
     display: block;
     &:before {
       content: map-get($data, "flag");
-      display: inline-block;
-      padding-right: 8px;
     }
   }
   .#{$region} {
@@ -51,7 +54,7 @@
         padding-right: 8px;
       }
       &:after {
-        content: " (#{$region})";
+        content: " [#{$region}]";
         display: inline-block;
         padding-left: 8px;
       }
