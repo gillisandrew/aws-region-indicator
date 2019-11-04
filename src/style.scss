@@ -5,8 +5,10 @@
   display: none;
   border-radius: 0;
 }
-#awsgnav #nav-phd .nav-elt-label {
-  filter: drop-shadow(0 1px 0 rgba(0, 0, 0, 0.8));
+#awsgnav #nav-phd .nav-elt-label,
+#awsgnav #nav-shortcutBar a,
+#awsgnav .awsc-ico-menu {
+  filter: drop-shadow(0 1px 0 rgba(0, 0, 0, 0.4));
 }
 #awsgnav #nav-menubar {
   text-shadow: 0 1px 0 rgba(0, 0, 0, 0.8);
