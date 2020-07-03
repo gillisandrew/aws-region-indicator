@@ -15,4 +15,4 @@ Copy the CSS into Stylish ([Firefox](https://addons.mozilla.org/en-US/firefox/ad
 
 ## Customizing
 
-COmmenting out a region removes it from the selection dropdown. Its a good way to hide regions you are not using. I've added default colors but you should change them so the regions you use most often have the most distinctive colors. All customization is in the `config.scss` file in the root of the repository.
+Commenting out a region removes it from the selection dropdown. Its a good way to hide regions you are not using. I've added default colors but you should change them so the regions you use most often have the most distinctive colors. All customization is in the `config.scss` file in the root of the repository.
