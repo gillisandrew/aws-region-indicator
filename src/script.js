@@ -7,7 +7,7 @@
 // @grant    none
 // ==/UserScript==
 
-const region = location.search.match(/region=((?:us(?:-gov)?|ap|ca|cn|eu|sa)-(?:central|(?:north|south)?(?:east|west)?)-\d)\??/)[1];
+const region = location.search.match(/region=((?:us(?:-gov)?|ap|ca|cn|eu|sa|af)-(?:central|(?:north|south)?(?:east|west)?)-\d)\??/)[1];
 if(region) {
-  document.querySelector("body").classList.add(region);
+  document.body.classList.add(region);
 }
