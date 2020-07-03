@@ -1,12 +1,19 @@
 {
+  "license": "MIT",
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/gillisandrew/aws-region-indicator"
+  },
   "scripts": {
     "cp:js": "node ./index.js script",
     "cp:css": "node ./index.js style",
     "cp": "node ./index.js",
-    "start": "node ./index.js"
+    "start": "node ./index.js",
+    "css": "node-sass ./src/style.scss",
+    "js": "echo ./src/script.js"
   },
   "dependencies": {
     "clipboardy": "^2.1.0",
-    "node-sass": "^4.13.0"
+    "node-sass": "^4.14.1"
   }
 }
