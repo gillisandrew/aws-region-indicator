@@ -26,14 +26,16 @@
     display: block;
     &:before {
       content: map-get($data, "flag");
-    }
+      font-weight: 400;
+      font-family: apple color emoji,segoe ui emoji,noto color emoji,android emoji,emojisymbols,emojione mozilla,twemoji mozilla,segoe ui symbol;    }
   }
   .#{$region} {
     #awsgnav #regionMenuContent .region.current-region {
       border-left-color: map-get($data, "color");
       &:before {
         content: map-get($data, "flag");
-        display: inline-block;
+        font-weight: 400;
+        font-family: apple color emoji,segoe ui emoji,noto color emoji,android emoji,emojisymbols,emojione mozilla,twemoji mozilla,segoe ui symbol;        display: inline-block;
         padding-right: 8px;
         font-weight: normal;
       }
