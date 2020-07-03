@@ -1,6 +1,8 @@
 // ==UserScript==
 // @name     AWS Region Indicator
 // @namespace https://console.aws.amazon.com/*
+// @include https://console.aws.amazon.com/*
+// @include https://*.aws.amazon.com/*
 // @version  1
 // @grant    none
 // ==/UserScript==
