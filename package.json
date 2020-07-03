@@ -2,7 +2,7 @@
   "license": "MIT",
   "repository": {
     "type" : "git",
-    "url" : "https://github.com/gillisandrew/aws-region-indicator"
+    "url" : "https://github.com/gillisandrew/aws-region-indicator.git"
   },
   "scripts": {
     "cp:js": "node ./index.js script",
